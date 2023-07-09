@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: g++.exe build active file",
+			"command": "C:\\Program Files\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"-Wall",
+				"-Weffc++",
+				"-Wextra",
+				"-Wsign-conversion",
+				"-pedantic-errors",
+                               
+                                "-Wshadow",
+				"-I/source/includes",
+				"${fileDirname}\\**.cpp",
+			  
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: \"C:\\Program Files\\mingw64\\bin\\g++.exe\""
+		}
+	]
+}
